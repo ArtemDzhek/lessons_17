@@ -1,0 +1,241 @@
+.container{
+   margin: 0 auto;
+   max-width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
+ 
+}
+@media (max-width: 1200px) {
+   .container{
+   max-width: 1000px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+}
+@media (max-width: 400px) {
+   .container{
+   max-width: 350px;
+   padding-left: 10px;
+   padding-right: 10px;
+   }
+}
+
+body{
+   font-family: 'Lato', sans-serif;
+}
+
+.wrappr-btn-red{
+   
+   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+   border-radius: 4px;
+   font-weight: 700;
+   font-size: 1rem;
+   color: #FFFFFF;
+   border: 1px solid #FF3F3A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 100%;
+
+}
+
+.btn-red{
+   padding: 15px 40px;
+   display: inline-block;
+ 
+}
+.wrappr-btn-red:hover{
+   box-shadow:  8px 3px 34px -9px rgba(255,63,58,0.45);
+}
+.wrappr-btn-red:active{
+   color: #FF3F3A;
+   background: #FFFFFF;
+   
+}
+@media (max-width: 1200px) {
+   .wrappr-btn-red{
+       font-weight: 400;
+       font-size: 0.8rem;
+       flex: 0 0 40%;
+      
+   }
+   .btn-red{
+      padding: 10px 15px;
+   }
+  }
+
+
+.blok-text{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.blok-text-first{
+   color: #1E212C;
+   opacity: 0.5;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.5;
+}
+.blok-text-second{
+   color: #1E212C;
+   font-weight: 900;
+   font-size: 2.8rem;
+   line-height: 1.3;
+}
+@media (max-width: 500px){
+   .blok-text{
+      gap: 10px;
+   }
+   .blok-text-second{
+      font-size: 2rem;
+      line-height: 1em;
+   }
+   .blok-text-first{   
+   font-size: 0.8rem;
+   line-height: 1em;}
+
+}
+.wrapper-input{
+   display: flex;
+  justify-content: center;
+   align-items: flex-end;
+   flex: 0 1 100%;
+   
+   gap: 40px;
+
+}
+@media (max-width: 1000px) {
+   .wrapper-input{
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   align-items: stretch;
+   flex: 0 1 100%;
+   }
+  }
+/* .wrapper-input:last-child{
+   width: 50%;
+} */
+.wrapper-input-blok  input{
+   border: 1px solid #D7DADD;
+   border-radius: 4px;
+   padding: 15px 16px;
+   flex: 0 1 100%;
+   
+}
+.wrapper-input-blok  {
+  flex: 0 1 100%;
+   flex-grow: 1;
+}
+.wrapper-input label{
+   font-weight: 400;
+   font-size: 14px;
+   color: #424551;
+   margin-bottom: 10px;
+   display: inline-block;
+}
+
+
+.list-check{
+   padding-left: 30px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+.list-check> li{
+ 
+   min-height: 15px;
+   position: relative;
+   
+}
+.list-check> li::before{
+   content: "";
+   display: inline-block;
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left: -30px;
+   top: 10%;
+   background: url("../icons/check.svg")no-repeat;
+}
+
+.lesson-input{
+   padding-left: 40px;
+}
+.lesson-input-label{
+   margin-bottom: 10px;
+   display: inline-block;
+}
+.tab-content{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.6;
+   color: #424551;
+   padding: 16px 0 25px 0;
+}
+[id^="tab"]:checked + label { 
+   /* top: 0;
+   padding-top: 17px;  */
+  
+ }
+ [id^="tab-content"]{
+   /* opacity: 0;
+   visibility: hidden; */
+  display: none;
+ }
+ [id^="tab"]:checked ~ [id^="tab-content"] {
+   /* visibility: visible;
+   opacity: 1; */
+  display: block;
+  
+ }
+ [id^="tab"]:checked ~.lesson-input-label> .lesson-input-red::before {
+ 
+  display: none;
+  
+ }
+
+ input[type="radio"] {
+   position: absolute;
+     opacity: 0;
+   visibility: hidden;
+   top: 0;
+   left: -99999px;
+ }
+ .lesson-input-label{
+   font-weight: 700;
+   font-size: 20px;
+   color: #1E212C;
+   padding-left: 0px;
+ }
+ .lesson-input-red{
+   font-weight: 400;
+   font-size: 20px;
+   color: #FF3F3A;
+   position: relative;
+ }
+ .lesson-input-red::after{
+   content:"";
+   display: inline-block;
+   position: absolute;
+   width: 20px;
+   height: 2px;
+   background: #FF3F3A; 
+   left: -40px;
+   top: 50%;
+ }
+ .lesson-input-red::before{
+   content:"";
+   display: inline-block;
+   position: absolute;
+   width: 2px;
+   height: 20px;
+   background: #FF3F3A; 
+   left: -31px;
+   bottom: 0;
+ }
+.steps-centr {
+    
+}
